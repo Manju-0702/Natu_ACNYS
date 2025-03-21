@@ -1,0 +1,319 @@
+/* ===============================
+   Banner Styling
+================================== */
+.about-banner {
+  background-image: url('../../../assets/back.jpg'); /* Update the path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ===============================
+   Message Section
+================================== */
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 60%;
+  margin: 60px auto;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.message:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   Image Styling (Left Side)
+================================== */
+.message img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+}
+
+
+.message img:hover {
+  transform: scale(1.1);
+}
+
+/* ===============================
+   Content Styling (Right Side)
+================================== */
+/* Text Styling */
+/* About Us Heading */
+.message-content h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1e4ea1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Underline effect */
+/* .message-content h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #1e4ea1;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 5px;
+} */
+
+.message-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #22af79;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trustees-section h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1e4ea1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* About Us Paragraph */
+.message-content p{
+  font-size: 19px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  text-align: justify;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Left border effect */
+.message-content p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(45deg, #1e4ea1, #144080);
+  border-radius: 5px;
+}
+
+/* ===============================
+   Animations
+================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .message {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .message img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .message-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    height: 200px;
+    font-size: 2rem;
+  }
+
+  .message {
+    width: 90%;
+  }
+
+  .message img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .message-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .message-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    height: 180px;
+    font-size: 1.8rem;
+  }
+
+  .message {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .message img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .message-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .message-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===============================
+   Trustees Section
+================================== */
+.trustees-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+
+
+.trustees-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trustee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.trustee:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trustee img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.trustee img:hover {
+  transform: scale(1.1);
+}
+
+.trustee h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .trustees-grid {
+    gap: 15px;
+  }
+
+  .trustee img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .trustee h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .trustees-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .trustee {
+    padding: 15px;
+  }
+
+  .trustee img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .trustee h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .trustees-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .trustee img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .trustee h4 {
+    font-size: 0.9rem;
+  }
+}

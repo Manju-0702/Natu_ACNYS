@@ -1,0 +1,54 @@
+@keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #e4f582, #f5e72d); /* Gradient effect */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 40px;
+  }
+  
+  .announcement-text {
+    animation: fadeSlide 0.8s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  

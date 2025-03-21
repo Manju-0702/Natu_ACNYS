@@ -1,0 +1,120 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual Program Card */
+.program {
+    flex-basis: 30%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.program img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effect for zoom */
+.program:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.program:hover img {
+    transform: scale(1.07);
+}
+
+/* Caption Overlay */
+.caption {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 15, 152, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hover effect for caption */
+.program:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Caption Icon */
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icon */
+.program:hover .caption img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Caption Text */
+.caption p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Text Animation on Hover */
+.program:hover .caption p {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .programs {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .program {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .program {
+        flex-basis: 100%;
+    }
+
+    .caption p {
+        font-size: 1rem;
+    }
+
+    .caption img {
+        width: 50px;
+    }
+}

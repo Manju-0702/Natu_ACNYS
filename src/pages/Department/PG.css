@@ -1,0 +1,49 @@
+.pg-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.pg-banner {
+    background: url('../../assets/pg-banner.jpg') center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.pg-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.pg-content h2 {
+    margin-top: 20px;
+    color: #f0a500;
+}
+
+.pg-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pg-content ul li {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.pg-content ul li:hover {
+    background: #f0a500;
+}

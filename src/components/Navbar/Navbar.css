@@ -1,0 +1,157 @@
+/* 💎 Navbar with Glassmorphism Effect */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    margin-top: 40px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+/* 🔥 Logo */
+.logo {
+    height: 50px;
+}
+
+/* 📱 Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* 🔗 Navbar Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* 🎨 Navigation Links */
+nav ul li a, .dropdown-title {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* 🟡 Fancy Hover Effect */
+nav ul li a:hover, .dropdown-title:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f0a500;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+}
+
+/* 🔽 Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    width: 180px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 Smooth Dropdown Animation */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 📌 Dropdown Items */
+.dropdown-menu li {
+    text-align: left;
+    padding: 12px 20px;
+}
+
+.dropdown-menu li a {
+    color: black;
+    font-size: 16px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* 🔥 Dropdown Hover Effect */
+.dropdown-menu li a:hover {
+    background: rgba(240, 165, 0, 0.2);
+    color: #f0a500;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+        transition: left 0.4s ease-in-out;
+    }
+
+    /* 🚀 Slide-in Mobile Menu */
+    nav.open {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    /* Mobile Dropdown */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+}

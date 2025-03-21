@@ -1,0 +1,86 @@
+.ug-container {
+    text-align: center;
+    /* padding: 20px; */
+    font-family: Arial, sans-serif;
+}
+
+.ug-banner {
+    background-image: url('../../../assets/back.jpg'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Default height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem; /* Default font size */
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
+    text-align: center;
+    padding: 0 20px;      
+}
+
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .anatomy-banner {
+        height: 200px;
+        font-size: 2rem;
+    }
+}
+
+/* Small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+    .anatomy-banner {
+        height: 150px;
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+}
+
+.ug-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #131213;
+    line-height: 1.6;
+}
+
+.ug-content h2 {
+    margin-top: 20px;
+    color: #f0a500;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.ug-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+/* Card Design */
+.ug-card {
+    background: #2e2e8b;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background 0.3s;
+    text-align: center;
+}
+
+.ug-card:hover {
+    background: #f0a500;
+    transform: scale(1.05);
+}
+
+.ug-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,129 @@
+.slider-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.slider-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(31, 30, 30, 0.8) 20%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 95%);
+    z-index: 1;
+}
+
+.slider-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 80%;
+}
+
+.slider-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 1.5s ease-in-out forwards;
+    text-shadow: 2px 2px 4px rgba(27, 241, 23, 0.6);
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-buttons button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #f7dd88;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-buttons button:hover {
+    background-color: #e67e22;
+}
+
+.slick-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.slider-arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.slider-arrows button {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.slider-arrows button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-text h1 {
+        font-size: 2rem;
+    }
+
+    .slider-buttons {
+        flex-direction: column;
+    }
+
+    .slider-buttons button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .slider-image {
+        height: 50vh;
+    }
+}

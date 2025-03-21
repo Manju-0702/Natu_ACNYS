@@ -1,0 +1,154 @@
+.about-banner {
+  background-image: url('../../../assets/back.jpg'); /* Update the path */
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Default height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem; /* Default font size */
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .anatomy-banner {
+      height: 200px;
+      font-size: 2rem;
+  }
+}
+
+/* Small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+  .anatomy-banner {
+      height: 150px;
+      font-size: 1.5rem;
+      padding: 0 10px;
+  }
+}
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .about-container img {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image Styling */
+.about-container img {
+  width: 35%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.about-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Animation */
+.about-content {
+  width: 60%;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Text Styling */
+/* About Us Heading */
+.about-content h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1e4ea1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Underline effect */
+.about-content h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #1e4ea1;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 5px;
+}
+
+/* About Us Paragraph */
+.about-text{
+  font-size: 19px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  text-align: justify;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Left border effect */
+.about-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(45deg, #1e4ea1, #144080);
+  border-radius: 5px;
+}

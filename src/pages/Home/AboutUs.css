@@ -1,0 +1,174 @@
+/* About Us Container */
+.about-us-container {
+  width: 100%;
+  padding: 50px 10%;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Layout for images and text */
+.about-us-content {
+  margin-top: 80px;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Images Container - Grid Layout for Four Images */
+.about-us-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Individual Image Styling */
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 1s ease-out forwards 0.3s;
+}
+
+.about-image:hover {
+  transform: scale(1.07);
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Side - Text */
+.about-us-text {
+  max-width: 650px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease-out forwards 0.5s;
+}
+
+/* About Us Heading */
+.about-us-text h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1e4ea1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Underline effect */
+.about-us-text h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #1e4ea1;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 5px;
+}
+
+/* About Us Paragraph */
+.about-us-text p {
+  font-size: 19px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  text-align: justify;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Left border effect */
+.about-us-text p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(45deg, #1e4ea1, #144080);
+  border-radius: 5px;
+}
+
+/* Read More Button */
+.read-more-btn {
+  background-color: #1e4ea1;
+  color: white;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards 0.7s;
+}
+
+.read-more-btn:hover {
+  background-color: #144080;
+  transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-images {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .about-us-text h2 {
+    font-size: 30px;
+  }
+
+  .about-us-text p {
+    font-size: 17px;
+  }
+}
