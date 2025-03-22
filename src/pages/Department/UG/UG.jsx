@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFlask, FaHeartbeat, FaMicroscope, FaBrain, FaDna } from "react-icons/fa"; // Import Icons
 import "./UG.css";
+import { path } from "framer-motion/client";
 
 const courses = [
   { name: "Anotomy", path: "/department/ug/anatomy", icon: <FaFlask /> },
@@ -16,7 +17,9 @@ const courses = [
   { name: "Department of Hydrotherapy and Mud Therapy", path: "/department/ug/hydrotherapy", icon: <FaBrain /> },
   { name: "Clinical Naturopathy Diagnosis and Research Methodology", path: "/department/ug/clinical-naturopathy", icon: <FaDna /> },
   { name: "Psychology Allied Health Sciences", path: "/department/ug/psychology", icon: <FaHeartbeat /> },
+  { name: "Community Medicine", path: "/department/ug/community-medicine", icon: <FaFlask /> }, // Added Community Medicine
 ];
+
 
 const UG = () => {
   return (

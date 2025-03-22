@@ -11,22 +11,23 @@ import ACNYS from "./pages/ACNYS/ACNYS";
 import UG from "./pages/Department/UG/UG";
 import PG from "./pages/Department/PG";
 import Anatomy from "./pages/Department/UG/Anatomy/Anatomy";
-import Physiology from "./pages/Department/UG/Physiology/Physiology";
+import Physiology from "./pages/Department/UG/Physiology/physiology";
 import Pathology from "./pages/Department/UG/Pathology";
-import Microbiology from "./pages/Department/UG/Microbiology";
+import Manipulative from "./pages/Department/UG/Manipulative";
 import YogaResearch from "./pages/Department/UG/YogaResearch";
-import Acupuncture from "./pages/Department/UG/Acupuncture";
+import Acupuncture from "./pages/Department/UG/Acupuncture/Acupunture";
 import FastingNutrition from "./pages/Department/UG/FastingNutrition";
-import DiagnosisGynecology from "./pages/Department/UG/DiagnosisGynecology";
+import DiagnosisGynecology from "./pages/Department/UG/DiagnosisGynecology/DiagnosisGynecology";
 import Hydrotherapy from "./pages/Department/UG/Hydrotherapy";
 import ClinicalNaturopathy from "./pages/Department/UG/ClinicalNaturopathy/Clinical";
 import Psychology from "./pages/Department/UG/Psychology";
 import Footer from './components/Footer/Footer';
+import Forensic from './pages/Department/UG/Forensic/Forensic'
 
 
 const App = () => {
   return (
-    <Router>
+    <Router>t 
       <Routes>
         <Route path="/" element={<Layout />}>
           {/* Main Pages */}
@@ -46,14 +47,15 @@ const App = () => {
           <Route path="department/ug/anatomy" element={<Anatomy />} />
           <Route path="department/ug/physiology" element={<Physiology />} />
           <Route path="department/ug/pathology" element={<Pathology />} />
-          <Route path="department/ug/microbiology" element={<Microbiology />} />
+          <Route path="/department/ug/manipulative-therapies" element={<Manipulative />} />
           <Route path="department/ug/yoga-research" element={<YogaResearch />} />
           <Route path="department/ug/acupuncture" element={<Acupuncture />} />
           <Route path="department/ug/fasting-nutrition" element={<FastingNutrition />} />
-          <Route path="department/ug/diagnosis-gynecology" element={<DiagnosisGynecology />} />
+          <Route path="department/ug/modern-diagnosis" element={<DiagnosisGynecology />} />
           <Route path="department/ug/hydrotherapy" element={<Hydrotherapy />} />
           <Route path="department/ug/clinical-naturopathy" element={<ClinicalNaturopathy />} />
           <Route path="department/ug/psychology" element={<Psychology />} />
+          <Route path="department/ug/forensic-medicine" element={<Forensic />} />
         </Route>
       </Routes>
       <Footer/>
