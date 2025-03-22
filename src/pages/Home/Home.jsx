@@ -4,6 +4,7 @@ import AboutUs from './AboutUs';
 import Programs from './Programs/Programs';
 import Stats from './Stats'; // Import the Stats component
 import './Home.css';
+import VideoTestimonials from './VideoTestimonials';
 
 const Home = () => {
   return (
@@ -17,6 +18,11 @@ const Home = () => {
       
       <Programs />
        {/* Animated Numbers Section */}
+
+       <div className="name">
+        <h2>Testimonials</h2>
+      </div>
+       <VideoTestimonials/>     
     </div>
   );
 };
