@@ -6,21 +6,21 @@ import faculty2 from "../../../../assets/anatomy2.jpg";
 const facultyData = [
   {
     id: 1,
-    name: "Dr. Harish Nayak", 
+    name: "Dr. Mamatha G", 
     image: faculty1,
     designation: "Professor",
-    qualification: "MBBS, MS",
-    yoe: "22 Years",
+    qualification: "MBBS, DA",
+    yoe: "19 Years",
     mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
     id: 2,
-    name: "Dr. Manu Bhat",
+    name: "Mr. Ashad",
     image: faculty2,
-    designation: "Professor",
-    qualification: "BHMS.MD HOMEO",
-    yoe: "13 Years",
+    designation: "Assistant Professor",
+    qualification: "M.sc Biochemistry",
+    yoe: "5 Years",
     mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
@@ -30,7 +30,7 @@ const Anatomy = () => {
   return (
     <div>
       <div className="anatomy-banner">
-        <h1>Anatomy Department</h1>
+        <h1>Physiology and Biochemistry</h1>
       </div>
 
       <div className="anatomy-container">

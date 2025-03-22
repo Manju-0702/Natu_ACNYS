@@ -2,25 +2,35 @@ import React from "react";
 import "./Acupuncture.css";
 import faculty1 from "../../../../assets/anatomy1.jpg";
 import faculty2 from "../../../../assets/anatomy2.jpg";
-
+import faculty3 from "../../../../assets/anatomy2.jpg";
 const facultyData = [
   {
     id: 1,
-    name: "Dr. Harish Nayak", 
+    name: "Dr. Vanitha S Shetty", 
     image: faculty1,
-    designation: "Professor",
-    qualification: "MBBS, MS",
-    yoe: "22 Years",
+    designation: "Principal",
+    qualification: "BNYS, MS Councelling",
+    yoe: "20 Years",
     mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
-    id: 2,
-    name: "Dr. Manu Bhat",
+    id: 2,  
+    name: "Dr. Mohammed Aquathar",
     image: faculty2,
-    designation: "Professor",
-    qualification: "BHMS.MD HOMEO",
-    yoe: "13 Years",
+    designation: "Lecturer",
+    qualification: "BNYS",
+    yoe: "1 Year",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
+  },
+  {
+    id: 3,
+    name: "Dr. Swathi S",
+    image: faculty3,
+    designation: "Assistant Professor",
+    qualification: "BNYS, MD Naturopathy",
+    yoe: "1 Year",
     mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
@@ -30,7 +40,7 @@ const Anatomy = () => {
   return (
     <div>
       <div className="anatomy-banner">
-        <h1>Anatomy Department</h1>
+        <h1>Acupunture and Acupressure, Color and Magneto Biology</h1>
       </div>
 
       <div className="anatomy-container">
