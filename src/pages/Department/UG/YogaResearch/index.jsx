@@ -1,9 +1,9 @@
 import React from "react";
 import "./YogaResearch.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
-import faculty3 from "../../../../assets/anatomy2.jpg";
-import faculty4 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/yoga1.jpeg";
+import faculty2 from "../../../../assets/user.webp";
+import faculty3 from "../../../../assets/yoga3.jpg";
+import faculty4 from "../../../../assets/yoga4.jpg";
 const facultyData = [
   {
     id: 1,

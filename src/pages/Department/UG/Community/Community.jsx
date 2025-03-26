@@ -1,7 +1,7 @@
 import React from "react";
 import "./Community.css";
 import faculty1 from "../../../../assets/community1.jpeg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty2 from "../../../../assets/user.webp";
 
 
 const facultyData = [

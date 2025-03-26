@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-p {
+.description p {
     max-width: 900px;
     margin: 0 auto 30px;
     text-align: justify;

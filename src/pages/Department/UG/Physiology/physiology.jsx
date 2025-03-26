@@ -1,7 +1,7 @@
 import React from "react";
 import "./physiology.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/physio2.jpg";
+import faculty2 from "../../../../assets/physio1.jpg";
 
 const facultyData = [
   {

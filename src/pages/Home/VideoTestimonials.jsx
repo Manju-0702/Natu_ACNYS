@@ -6,9 +6,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./VideoTestimonials.css"; // Import CSS
 
-import video1 from "../../assets/video1.mp4";
-import video2 from "../../assets/video.mp4";
-import video3 from "../../assets/video2.mp4";
+import video1 from "../../assets/anand1.mp4";
+import video2 from "../../assets/anand2.mp4";
+import video3 from "../../assets/anand1.mp4";
 
 const testimonials = [
   { name: "John Doe", video: video1, feedback: "This service is amazing! It has changed my life for the better." },

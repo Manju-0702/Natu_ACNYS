@@ -1,6 +1,6 @@
 import React from "react";
 import "./DiagnosisGynecology.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
+import faculty1 from "../../../../assets/user.webp";
 import faculty2 from "../../../../assets/diagnosis1.webp";
 
 const facultyData = [

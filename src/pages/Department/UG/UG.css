@@ -8,7 +8,7 @@
     background-image: url('../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 300px; /* Default height */
+    height: 350px; /* Default height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +17,12 @@
     font-weight: bold;
     text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
     text-align: center;
-    padding: 0 20px;      
+    padding: 0 20px;
 }
 
 /* Medium screens (tablets, 768px and below) */
 @media (max-width: 768px) {
-    .anatomy-banner {
+    .ug-banner {
         height: 200px;
         font-size: 2rem;
     }
@@ -30,12 +30,13 @@
 
 /* Small screens (phones, 480px and below) */
 @media (max-width: 480px) {
-    .anatomy-banner {
+    .ug-banner {
         height: 150px;
         font-size: 1.5rem;
         padding: 0 10px;
     }
 }
+
 
 .ug-content {
     max-width: 1000px;

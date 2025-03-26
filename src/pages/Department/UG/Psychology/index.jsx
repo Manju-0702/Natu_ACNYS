@@ -1,7 +1,7 @@
 import React from "react";
 import "./Psycology.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/psych2.jpg";
+import faculty2 from "../../../../assets/psych1.jpg";
 
 
 const facultyData = [

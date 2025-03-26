@@ -1,8 +1,8 @@
 import React from "react";
 import "./Pathology.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
-import faculty3 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/patho1.jpg";
+import faculty2 from "../../../../assets/patho2.jpg";
+import faculty3 from "../../../../assets/patho3.jpg";
 const facultyData = [
   {
     id: 1,

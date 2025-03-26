@@ -1,7 +1,7 @@
 import React from "react";
 import "./FastingNutrition.css";
-import faculty1 from "../../../../assets/clinical1.jpg";
-import faculty2 from "../../../../assets/clinical2.jpg";
+import faculty1 from "../../../../assets/user.webp";
+import faculty2 from "../../../../assets/user.webp";
 
 
 const facultyData = [

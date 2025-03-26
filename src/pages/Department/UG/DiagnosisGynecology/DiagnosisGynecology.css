@@ -2,7 +2,7 @@
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 300px; /* Default height */
+    height: 350px; /* Default height */
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,54 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
 @keyframes fadeSlide {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  50% {
+    opacity: 0.5;
   }
-  
-  .announcement-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(90deg, #e4f582, #f5e72d); /* Gradient effect */
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 12px 20px;
-    font-weight: bold;
-    font-size: 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 40px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .announcement-text {
-    animation: fadeSlide 0.8s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    font-size: 18px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 10s linear infinite;
+  100% {
+    transform: translateX(-100%);
   }
-  
+}
+
+.announcement-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #31668a, #ff5400); /* Premium gradient */
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 45px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.marquee-container {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+
+.announcement-text {
+  animation: fadeSlide 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}

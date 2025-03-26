@@ -1,13 +1,13 @@
 import React from "react";
 import "./Clinical.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
-import faculty3 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/user.webp";
+import faculty2 from "../../../../assets/user.webp";
+import faculty3 from "../../../../assets/user.webp";
 import faculty4 from "../../../../assets/clinical4.jpg";
 import faculty5 from "../../../../assets/clinical1.jpg";
 import faculty6 from "../../../../assets/clinical3.jpg";
 import faculty7 from "../../../../assets/clinical2.jpg";
-import faculty8 from "../../../../assets/anatomy2.jpg";
+import faculty8 from "../../../../assets/user.webp";
 
 const facultyData = [
   {

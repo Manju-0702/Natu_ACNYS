@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
 .slider-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh; /* Reduced height */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -31,14 +33,19 @@
     width: 80%;
 }
 
+/* Modern, Stylish Font for h1 */
 .slider-text h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6), 0px 0px 12px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeSlideUp 1.5s ease-in-out forwards;
-    text-shadow: 2px 2px 4px rgba(27, 241, 23, 0.6);
 }
 
 .slider-buttons {
@@ -48,17 +55,22 @@
 }
 
 .slider-buttons button {
-    padding: 10px 20px;
+    margin-top: 30px;
+    padding: 12px 24px;
     font-size: 1.2rem;
-    background-color: #f7dd88;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff9800, #e67e22);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    color: white;
+    text-transform: uppercase;
 }
 
 .slider-buttons button:hover {
-    background-color: #e67e22;
+    background: linear-gradient(45deg, #e67e22, #ff5722);
+    transform: scale(1.05);
 }
 
 .slick-slider {
@@ -68,7 +80,7 @@
 
 .slider-image {
     width: 100%;
-    height: 100vh;
+    height: 80vh; /* Reduced height */
     object-fit: cover;
     position: relative;
     z-index: 0;
@@ -109,9 +121,33 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 1024px) { /* Tablets */
+    .slider-section {
+        height: 60vh;
+    }
+
+    .slider-image {
+        height: 60vh;
+    }
+
     .slider-text h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Small Tablets & Large Phones */
+    .slider-section {
+        height: 50vh;
+    }
+
+    .slider-image {
+        height: 50vh;
+    }
+
+    .slider-text h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
     }
 
     .slider-buttons {
@@ -120,10 +156,31 @@
 
     .slider-buttons button {
         font-size: 1rem;
-        padding: 8px 15px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) { /* Mobile Devices */
+    .slider-section {
+        height: 45vh;
     }
 
     .slider-image {
-        height: 50vh;
+        height: 45vh;
+    }
+
+    .slider-text {
+        width: 90%;
+        top: 30%;
+    }
+
+    .slider-text h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .slider-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 }
