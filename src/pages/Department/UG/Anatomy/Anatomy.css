@@ -2,7 +2,7 @@
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 250px; /* Default height */
+    height: 300px; /* Default height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,8 @@
     text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
     text-align: center;
     padding: 0 20px;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding in width/height calculation */
 }
 
 /* Medium screens (tablets, 768px and below) */
@@ -19,6 +21,7 @@
     .anatomy-banner {
         height: 200px;
         font-size: 2rem;    
+        padding: 0 15px; /* Adjust padding */
     }
 }
 
@@ -27,9 +30,19 @@
     .anatomy-banner {
         height: 150px;
         font-size: 1.5rem;
-        padding: 0 10px;
+        padding: 0 10px; /* Adjust padding */
     }
 }
+
+/* Extra Small Screens (below 400px) */
+@media (max-width: 400px) {
+    .anatomy-banner {
+        height: 120px;
+        font-size: 1.2rem;
+        padding: 0 8px; /* Reduce padding further */
+    }
+}
+
 
 
 

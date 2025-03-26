@@ -1,52 +1,87 @@
+
 .testimonial-section {
+  width: 100vw; /* Covers full viewport width */
+  background: linear-gradient(135deg, #ffffff, #ffffff); /* Smooth gradient */
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
 }
 
+/* Centered Swiper Container */
 .testimonial-container {
-  max-width: 900px;
-  width: 100%;
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1400px;
+  position: relative;
 }
 
+/* Swiper Container */
 .swiper-container {
   width: 100%;
   padding-bottom: 30px;
 }
 
+/* Swiper Slide */
 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: white;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Video Styling */
 .testimonial-video {
   width: 100%;
-  max-height: 400px;
+  height: 300px;
   border-radius: 10px;
   object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Hover Effect on Video */
+.testimonial-video:hover {
+  transform: scale(1.05);
+}
+
+/* Name & Feedback */
 .testimonial-name {
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
+  color: #333;
 }
 
 .testimonial-feedback {
   margin-top: 10px;
-  color: #1b1a1a;
+  color: #555;
   font-size: 16px;
   line-height: 1.4;
 }
 
+/* Custom Swiper Navigation */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+/* Video Popup */
 /* Video Popup */
 .video-popup {
   position: fixed;
@@ -59,41 +94,72 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 20px;
 }
 
+/* Centered Video Container */
 .video-popup-content {
   position: relative;
-  max-width: 800px;
-  width: 90%;
+  max-width: 80%;
+  width: 80%;
+  height: auto;
   background: black;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Popup Video Styling */
 .popup-video {
   width: 100%;
-  max-height: 500px;
+  height: auto;
+  max-height: 90vh;
   border-radius: 10px;
 }
 
+/* Close Button */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
+  top: -15px;
+  right: -15px;
+  font-size: 35px;
+  font-weight: bold;
   color: white;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Smaller Swiper Navigation Buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  color: black !important;
-  width: 30px !important;
-  height: 30px !important;
+/* Hover Effect on Close Button */
+.close-btn:hover {
+  background: rgba(255, 0, 0, 0.8);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 20px !important;
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .testimonial-video {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-video {
+    height: 200px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }

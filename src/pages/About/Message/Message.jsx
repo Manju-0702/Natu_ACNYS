@@ -2,9 +2,9 @@ import React from "react";
 import "./Message.css";
 import chairmanImg from '../../../assets/Message.jpeg';  
 import message from '../../../assets/Message1.jpeg';
-import trustee1 from '../../../assets/Message1.jpeg';
-import trustee2 from '../../../assets/Message1.jpeg';
-import trustee3 from '../../../assets/Message1.jpeg';
+import trustee1 from '../../../assets/trustee1.webp';
+import trustee2 from '../../../assets/trustee2.jfif';
+import trustee3 from '../../../assets/diagnosis1.webp';
 import trustee4 from '../../../assets/clinical3.jpg';
 import trustee5 from '../../../assets/Message1.jpeg';
 
@@ -44,15 +44,15 @@ const Management = () => {
         <div className="trustees-grid">
           <div className="trustee">
             <img src={trustee1} alt="Trustee 1" />
-            <h4>Trustee Name 1</h4>
+            <h4>Dr. Vinay Alva</h4>
           </div>
           <div className="trustee">
             <img src={trustee2} alt="Trustee 2" />
-            <h4>Trustee Name 2</h4>
+            <h4>Mr. Vivek Alva</h4>
           </div>
           <div className="trustee">
             <img src={trustee3} alt="Trustee 3" />
-            <h4>Trustee Name 3</h4>
+            <h4>Dr. Hana Shetty</h4>
           </div>
           <div className="trustee">
             <img src={trustee4} alt="Trustee 4" />

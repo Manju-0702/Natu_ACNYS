@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import "./AnnouncementBar.css";
 
 const announcements = [
-  "🎉 Admissions open for 2025-26!",
-  "📢 New courses added to the curriculum.",
+  "🎉 Be REady for The biggest rivelry ON March 28 ",
+  "📢 RCB vs CSK",
   "📅 Upcoming seminar on AI & ML on March 30th.",
 ];
 
@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAnnouncement((prev) => (prev + 1) % announcements.length);
-    }, 5000); // Change every 5 seconds
+    }, 3000); // Change every 5 seconds
 
     return () => clearInterval(interval);
   }, []);

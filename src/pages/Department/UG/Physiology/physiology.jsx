@@ -29,11 +29,11 @@ const facultyData = [
 const Anatomy = () => {
   return (
     <div>
-      <div className="anatomy-banner">
+      <div className="Physiology-banner">
         <h1>Physiology and Biochemistry</h1>
       </div>
 
-      <div className="anatomy-container">
+      <div className="Physiology-container">
         <div className="about-department">
           <h2>About Department</h2>
           <p>

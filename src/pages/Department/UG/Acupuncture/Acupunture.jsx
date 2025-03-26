@@ -1,8 +1,8 @@
 import React from "react";
 import "./Acupuncture.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
+import faculty1 from "../../../../assets/message1.jpeg";
 import faculty2 from "../../../../assets/anatomy2.jpg";
-import faculty3 from "../../../../assets/anatomy2.jpg";
+import faculty3 from "../../../../assets/Accupunture1.jpeg";
 const facultyData = [
   {
     id: 1,
@@ -39,11 +39,11 @@ const facultyData = [
 const Anatomy = () => {
   return (
     <div>
-      <div className="anatomy-banner">
+      <div className="Acupunture-banner">
         <h1>Acupunture and Acupressure, Color and Magneto Biology</h1>
       </div>
 
-      <div className="anatomy-container">
+      <div className="Acupunture-container">
         <div className="about-department">
           <h2>About Department</h2>
           <p>

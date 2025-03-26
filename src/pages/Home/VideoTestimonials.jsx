@@ -11,9 +11,11 @@ import video2 from "../../assets/video.mp4";
 import video3 from "../../assets/video2.mp4";
 
 const testimonials = [
-  { name: "John Doe", type: "video", video: video1, feedback: "This service is amazing! It has changed my life for the better." },
-  { name: "Jane Smith", type: "video", video: video2, feedback: "I highly recommend this to everyone. Excellent experience!" },
-  { name: "Mike Johnson", type: "video", video: video3, feedback: "Top-notch service with great support. I'm truly satisfied!" },
+  { name: "John Doe", video: video1, feedback: "This service is amazing! It has changed my life for the better." },
+  { name: "Jane Smith", video: video2, feedback: "I highly recommend this to everyone. Excellent experience!" },
+  { name: "Mike Johnson", video: video3, feedback: "Top-notch service with great support. I'm truly satisfied!" },
+  { name: "Emily Davis", video: video1, feedback: "A fantastic experience with outstanding quality!" },
+  { name: "Chris Brown", video: video2, feedback: "The best decision I've made so far. Highly recommend!" },
 ];
 
 const TestimonialSlider = () => {
@@ -35,11 +37,16 @@ const TestimonialSlider = () => {
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={20}
-          slidesPerView={1}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          loop={true} // Loop enabled
+          slidesPerView={3} // Show 3 videos at a time
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          loop={true}
           pagination={{ clickable: true }}
           navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
+          breakpoints={{
+            1024: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            480: { slidesPerView: 1 },
+          }}
           className="swiper-container"
         >
           {testimonials.map((testimonial, index) => (

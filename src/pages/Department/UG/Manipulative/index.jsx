@@ -1,7 +1,7 @@
 import React from "react";
 import "./Manipulative.css";
-import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty1 from "../../../../assets/manipulative1.jpeg";
+import faculty2 from "../../../../assets/manipulative2.jpeg";
 
 const facultyData = [
   {
@@ -29,11 +29,11 @@ const facultyData = [
 const Anatomy = () => {
   return (
     <div>
-      <div className="anatomy-banner">
+      <div className="Manipulative-banner">
         <h1>Manipulative Therapies & Physical Medicine</h1>
       </div>
 
-      <div className="anatomy-container">
+      <div className="Manipulative-container">
         <div className="about-department">
           <h2>About Department</h2>
           <p>

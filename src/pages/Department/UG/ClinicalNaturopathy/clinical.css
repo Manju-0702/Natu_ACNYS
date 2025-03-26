@@ -1,12 +1,12 @@
-.clinical-banner {
+.Clinical-banner {
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 400px; /* Default height */
+    height: 300px; /* Default height */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(245, 245, 245);
     font-size: 2.0rem; /* Default font size */
     font-weight: bold;
     text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
@@ -16,25 +16,27 @@
 
 /* Medium screens (tablets, 768px and below) */
 @media (max-width: 768px) {
-    .anatomy-banner {
+    .Clinical-banner {
         height: 200px;
-        font-size: 2rem;
+        font-size: 2rem;    
     }
-}
+} 
 
 /* Small screens (phones, 480px and below) */
 @media (max-width: 480px) {
-    .anatomy-banner {
+    .Clinical-banner {
         height: 150px;
         font-size: 1.5rem;
         padding: 0 10px;
     }
 }
 
-.clinical-container {
+
+
+.Clinical-container {
     text-align: center;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin-top: 80px;
 }
 
@@ -166,4 +168,17 @@
 .faculty-back-email {
     color: #1abc9c;
     font-weight: bold;
+}
+
+.about-department{
+    margin-bottom: 80px;
+}
+
+.about-department h2{
+    font-size: 3rem;
+}
+
+.faculty-heading{
+    margin-bottom: 40px;
+    font-size: 35px;
 }

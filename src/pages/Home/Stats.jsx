@@ -5,30 +5,45 @@ const Stats = () => {
   const [count, setCount] = useState({ programs: 0, years: 0, graduates: 0 });
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((prev) => ({
-        programs: prev.programs < 120 ? prev.programs + 2 : 120,
-        years: prev.years < 43 ? prev.years + 1 : 43,
-        graduates: prev.graduates < 10000 ? prev.graduates + 200 : 10000,
-      }));
-    }, 50);
+    let start = { programs: 0, years: 0, graduates: 0 };
+    const end = { programs: 120, years: 43, graduates: 14000 };
+    const duration = 1500;
+    let startTime;
 
-    return () => clearInterval(interval);
+    function animateCount(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+
+      setCount({
+        programs: Math.floor(start.programs + (end.programs - start.programs) * progress),
+        years: Math.floor(start.years + (end.years - start.years) * progress),
+        graduates: Math.floor(start.graduates + (end.graduates - start.graduates) * progress),
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(animateCount);
+      }
+    }
+
+    requestAnimationFrame(animateCount);
   }, []);
 
   return (
     <div className="stats-container">
-      <div className="stat">
-        <h1>{count.programs}+</h1>
-        <p>Degree Programs</p>
-      </div>
-      <div className="stat">
-        <h1>{count.years}+</h1>
-        <p>Years of Excellence</p>
-      </div>
-      <div className="stat">
-        <h1>{count.graduates.toLocaleString()}+</h1>
-        <p>Graduates</p>
+      <h2>Alva's College of Naturopathy and Yogic Science</h2>
+      <div className="stats-row">
+        <div className="stat">
+          <h1>{count.programs}+</h1>
+          <p>Degree Programs</p>
+        </div>
+        <div className="stat">
+          <h1>{count.years}+</h1>
+          <p>Years of Excellence</p>
+        </div>
+        <div className="stat">
+          <h1>{count.graduates.toLocaleString()}+</h1>
+          <p>Graduates</p>
+        </div>
       </div>
     </div>
   );

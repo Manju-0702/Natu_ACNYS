@@ -1,26 +1,26 @@
 import React from "react";
 import "./DiagnosisGynecology.css";
 import faculty1 from "../../../../assets/anatomy1.jpg";
-import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty2 from "../../../../assets/diagnosis1.webp";
 
 const facultyData = [
   {
     id: 1,
-    name: "Dr. Harish Nayak", 
+    name: "Dr. Vasantha T", 
     image: faculty1,
     designation: "Professor",
-    qualification: "MBBS, MS",
-    yoe: "22 Years",
+    qualification: "MBBS, MD",
+    yoe: "16 Years",
     mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
     id: 2,
-    name: "Dr. Manu Bhat",
+    name: "Dr. Hana Shetty",
     image: faculty2,
-    designation: "Professor",
-    qualification: "BHMS.MD HOMEO",
-    yoe: "13 Years",
+    designation: "Assistant Professor",
+    qualification: "MBBS , MD(OBG)",
+    yoe: "6 Years",
     mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
@@ -29,11 +29,11 @@ const facultyData = [
 const Anatomy = () => {
   return (
     <div>
-      <div className="anatomy-banner">
-        <h1>Anatomy Department</h1>
+      <div className="DiagnosisGynecology-banner">
+        <h1>Modern Diagnosis and Obstetrics and gynecology</h1>
       </div>
 
-      <div className="anatomy-container">
+      <div className="DiagnosisGynecology-container">
         <div className="about-department">
           <h2>About Department</h2>
           <p>

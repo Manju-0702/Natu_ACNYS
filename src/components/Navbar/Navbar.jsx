@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setDropdowns({ about: false, department: false }); // Close dropdowns when menu toggles
+    setDropdowns({ about: false, department: false }); 
   };
 
   const handleMouseEnter = (name) => {
@@ -62,6 +62,7 @@ const Navbar = () => {
           </li>
 
           <li><Link to="/academics" onClick={toggleMenu}>Academics</Link></li>
+          <li><Link to="/anandamaya" onClick={toggleMenu}>Anandamaya</Link></li>
           <li><Link to="/ACNYS" onClick={toggleMenu}>Life@ACNYS</Link></li>
           <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
         </ul>

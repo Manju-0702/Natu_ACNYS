@@ -1,107 +1,119 @@
 import React from "react";
-import "./clinical.css";
-import faculty1 from "../../../../assets/clinical1.jpg";
-import faculty2 from "../../../../assets/clinical2.jpg";
-import faculty3 from "../../../../assets/clinical3.jpg";
+import "./Clinical.css";
+import faculty1 from "../../../../assets/anatomy1.jpg";
+import faculty2 from "../../../../assets/anatomy2.jpg";
+import faculty3 from "../../../../assets/anatomy2.jpg";
 import faculty4 from "../../../../assets/clinical4.jpg";
-
+import faculty5 from "../../../../assets/clinical1.jpg";
+import faculty6 from "../../../../assets/clinical3.jpg";
+import faculty7 from "../../../../assets/clinical2.jpg";
+import faculty8 from "../../../../assets/anatomy2.jpg";
 
 const facultyData = [
   {
     id: 1,
-    name: "Dr. Prajna P Shetty", 
+    name: "Dr. Shankar Shetty", 
     image: faculty1,
-    designation: "Associate Professor",
-    qualification: "BNYS, MD Naturopathy",
-    yoe:"13 Years",
+    designation: "Professor",
+    qualification: "BSc , MLT, MSC(MED), PHD",
+    yoe: "15 Years",
     mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
-    id: 2,
-    name: "Dr. Akshatha",
+    id: 2,  
+    name: "Dr. Padmanabha Shenoy",
     image: faculty2,
-    designation: "Lecturer",
+    designation: "Professor",
     qualification: "BNYS",
-    yoe:"4 Years",
+    yoe: "13 Years",
     mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
     id: 3,
-    name: "Dr. Greeshma Vivek Alva",
+    name: "Dr. Lakshmeesha D R",
     image: faculty3,
-    designation: "Lecturer",
-    qualification: "BNYS",
-    yoe:"1 Year",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    designation: "Associate Professor",
+    qualification: "BNYS, MD Naturopathy",
+    yoe: "9 Years",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
   {
     id: 4,
     name: "Dr. Saritha N K",
     image: faculty4,
-    designation: "Assisstant Professor",
+    designation: "Assistant Professor",
     qualification: "BNYS",
-    yoe:"6 Years",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    yoe: "6 Years",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
   {
     id: 5,
-    name: "Dr. Saritha N K",
-    image: faculty4,
-    designation: "Assisstant Professor",
-    qualification: "BNYS",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    name: "Dr. Prajna P shetty",
+    image: faculty5,
+    designation: "Associate Professor",
+    qualification: "BNYS, MD Naturopathy",
+    yoe: "13 Years",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
   {
     id: 6,
-    name: "Dr. Saritha N K",
-    image: faculty4,
-    designation: "Assisstant Professor",
+    name: "Dr. Greeshma Vivek Alva",
+    image: faculty6,
+    designation: "Lecturer",
     qualification: "BNYS",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    yoe: "1 Year",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
   {
     id: 7,
-    name: "Dr. Saritha N K",
-    image: faculty4,
-    designation: "Assisstant Professor",
+    name: "Dr. Akshatha",
+    image: faculty7,
+    designation: "Lecturer",
     qualification: "BNYS",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    yoe: "4 Years",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
   {
     id: 8,
-    name: "Dr. Saritha N K",
-    image: faculty4,
-    designation: "Assisstant Professor",
-    qualification: "BNYS",
-    mobile: "+91 76543 21098",
-    email: "emily.brown@example.com"
+    name: "Dr. Audrey Pinto",
+    image: faculty8,
+    designation: " Professor",
+    qualification: "MA , PhD",
+    yoe: "20 Years",
+    mobile: "+91 87654 32109",
+    email: "jane.smith@example.com"
   },
 ];
 
 const Anatomy = () => {
   return (
     <div>
-      <div className="clinical-banner">
-        <h1>Clinical Naturopathy Diagnosis and Research Methodology</h1>
+      <div className="Acupunture-banner">
+        <h1>Clinical Naturopathy Diagnosis and Research methodology</h1>
       </div>
 
-      <div className="clinical-container">
-        <p className="description">
-          Welcome to the Anatomy department! This course covers the fundamentals of human anatomy.
-        </p>
-        
+      <div className="Acupunture-container">
+        <div className="about-department">
+          <h2>About Department</h2>
+          <p>
+            The Anatomy Department is dedicated to providing comprehensive education 
+            in human anatomy, fostering research, and encouraging innovation in the field.
+          </p>
+        </div>
+
+        <h2 className="faculty-heading">Our Faculty</h2>
+
         <div className="faculty-grid">
           {facultyData.map((faculty) => (
             <div key={faculty.id} className="faculty-card">
               <div className="card-inner">
-                {/* Front Side */}
                 <div className="card-front">
                   <img src={faculty.image} alt={faculty.name} className="faculty-image" />
                   <div className="faculty-info">
@@ -109,8 +121,6 @@ const Anatomy = () => {
                     <p className="faculty-designation">{faculty.designation}</p>
                   </div>
                 </div>
-
-                {/* Back Side */}
                 <div className="card-back">
                   <div className="faculty-back-details">
                     <h3 className="faculty-back-name">{faculty.name}</h3>

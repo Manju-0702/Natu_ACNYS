@@ -1,4 +1,4 @@
-.anatomy-banner {
+.Physiology-banner {
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@
 
 /* Medium screens (tablets, 768px and below) */
 @media (max-width: 768px) {
-    .anatomy-banner {
+    .Physiology-banner {
         height: 200px;
         font-size: 2rem;    
     }
@@ -24,7 +24,7 @@
 
 /* Small screens (phones, 480px and below) */
 @media (max-width: 480px) {
-    .anatomy-banner {
+    .Physiology-banner {
         height: 150px;
         font-size: 1.5rem;
         padding: 0 10px;
@@ -33,7 +33,7 @@
 
 
 
-.anatomy-container {
+.Physiology-container {
     text-align: center;
     padding: 40px;
     background-color: #ffffff;

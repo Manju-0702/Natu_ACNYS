@@ -6,6 +6,7 @@ import AboutACNYS from "./pages/About/AboutACNYS/AboutACNYS";
 import VisionMission from "./pages/About/VisionMission/VisionMission";
 import Message from "./pages/About/Message/Message";
 import Academics from "./pages/Academics/Academics";
+import Anandamaya from "./pages/Anandamaya/Anandamaya";
 import Contact from "./pages/Contact/Contact";
 import ACNYS from "./pages/ACNYS/ACNYS";
 import UG from "./pages/Department/UG/UG";
@@ -23,6 +24,7 @@ import ClinicalNaturopathy from "./pages/Department/UG/ClinicalNaturopathy/Clini
 import Psychology from "./pages/Department/UG/Psychology";
 import Footer from './components/Footer/Footer';
 import Forensic from './pages/Department/UG/Forensic/Forensic'
+import Community from './pages/Department/UG/Community/Community'
 
 
 const App = () => {
@@ -36,6 +38,7 @@ const App = () => {
           <Route path="about/vision-mission" element={<VisionMission />} />
           <Route path="about/messages" element={<Message />} />
           <Route path="academics" element={<Academics />} />
+          <Route path="anandamaya" element={<Anandamaya />} />
           <Route path="acnys" element={<ACNYS />} />
           <Route path="contact" element={<Contact />} />
 
@@ -56,6 +59,8 @@ const App = () => {
           <Route path="department/ug/clinical-naturopathy" element={<ClinicalNaturopathy />} />
           <Route path="department/ug/psychology" element={<Psychology />} />
           <Route path="department/ug/forensic-medicine" element={<Forensic />} />
+          <Route path="department/ug/community" element={<Community />} />
+
         </Route>
       </Routes>
       <Footer/>
