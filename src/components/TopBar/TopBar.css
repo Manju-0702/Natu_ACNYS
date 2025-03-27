@@ -1,0 +1,134 @@
+/* Default TopBar Styling */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left section (Logo & Title) */
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar-logo {
+    height: 60px; /* Adjusted for responsiveness */
+    margin-left: 20px;
+    max-width: 100px;
+}
+
+/* Center section (Contact Info) */
+.topbar-center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.topbar-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Right section (Button) */
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.enquire-btn {
+    background-color: #f0a500;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.enquire-btn:hover {
+    background-color: #d18f00;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .topbar {
+        padding: 10px;
+    }
+
+    .topbar-logo {
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .topbar-center {
+        gap: 10px;
+    }
+
+    .topbar-info {
+        gap: 10px;
+    }
+
+    .enquire-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .topbar-left,
+    .topbar-center,
+    .topbar-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topbar-logo {
+        height: 45px;
+    }
+
+    .enquire-btn {
+        margin-right: 0;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topbar-logo {
+        height: 40px;
+    }
+
+    .topbar-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .enquire-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

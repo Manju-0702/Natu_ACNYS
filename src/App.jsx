@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import TopBar from "./components/TopBar/TopBar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import Programs from "./pages/Home/Programs/Programs"; // Import Programs
+import Programs from "./pages/Home/Programs/Programs"; 
 import AboutACNYS from "./pages/About/AboutACNYS/AboutACNYS";
 import VisionMission from "./pages/About/VisionMission/VisionMission";
 import Message from "./pages/About/Message/Message";
@@ -30,39 +31,33 @@ import Community from './pages/Department/UG/Community/Community';
 const App = () => {
   return (
     <Router>
+      <TopBar />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about/acnys" element={<AboutACNYS />} />
-          <Route path="about/vision-mission" element={<VisionMission />} />
-          <Route path="about/messages" element={<Message />} />
-          <Route path="academics" element={<Academics />} />
-          <Route path="anandamaya" element={<Anandamaya />} />
-          <Route path="acnys" element={<ACNYS />} />
-          <Route path="contact" element={<Contact />} />
-          
-          {/* Programs Page Route */}
-          <Route path="programs" element={<Programs />} />
-
-          {/* Department Pages */}
-          <Route path="department/ug" element={<UG />} />
-          <Route path="department/pg" element={<PG />} />
-
-          {/* UG Course Pages */}
-          <Route path="department/ug/anatomy" element={<Anatomy />} />
-          <Route path="department/ug/physiology" element={<Physiology />} />
-          <Route path="department/ug/pathology" element={<Pathology />} />
-          <Route path="department/ug/manipulative-therapies" element={<Manipulative />} />
-          <Route path="department/ug/yoga-research" element={<YogaResearch />} />
-          <Route path="department/ug/acupuncture" element={<Acupuncture />} />
-          <Route path="department/ug/fasting-nutrition" element={<FastingNutrition />} />
-          <Route path="department/ug/modern-diagnosis" element={<DiagnosisGynecology />} />
-          <Route path="department/ug/hydrotherapy" element={<Hydrotherapy />} />
-          <Route path="department/ug/clinical-naturopathy" element={<ClinicalNaturopathy />} />
-          <Route path="department/ug/psychology" element={<Psychology />} />
-          <Route path="department/ug/forensic-medicine" element={<Forensic />} />
-          <Route path="department/ug/community" element={<Community />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="about/acnys" element={<AboutACNYS />} />
+        <Route path="about/vision-mission" element={<VisionMission />} />
+        <Route path="about/messages" element={<Message />} />
+        <Route path="academics" element={<Academics />} />
+        <Route path="anandamaya" element={<Anandamaya />} />
+        <Route path="acnys" element={<ACNYS />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="programs" element={<Programs />} />
+        <Route path="department/ug" element={<UG />} />
+        <Route path="department/pg" element={<PG />} />
+        <Route path="department/ug/anatomy" element={<Anatomy />} />
+        <Route path="department/ug/physiology" element={<Physiology />} />
+        <Route path="department/ug/pathology" element={<Pathology />} />
+        <Route path="department/ug/manipulative-therapies" element={<Manipulative />} />
+        <Route path="department/ug/yoga-research" element={<YogaResearch />} />
+        <Route path="department/ug/acupuncture" element={<Acupuncture />} />
+        <Route path="department/ug/fasting-nutrition" element={<FastingNutrition />} />
+        <Route path="department/ug/modern-diagnosis" element={<DiagnosisGynecology />} />
+        <Route path="department/ug/hydrotherapy" element={<Hydrotherapy />} />
+        <Route path="department/ug/clinical-naturopathy" element={<ClinicalNaturopathy />} />
+        <Route path="department/ug/psychology" element={<Psychology />} />
+        <Route path="department/ug/forensic-medicine" element={<Forensic />} />
+        <Route path="department/ug/community" element={<Community />} />
       </Routes>
       <Footer />
     </Router>

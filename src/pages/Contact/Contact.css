@@ -1,0 +1,140 @@
+
+
+/* General Styles */
+
+  
+  .contact-banner {
+    background-image: url('../../assets/back.jpg');
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    height: 350px;
+  }
+
+  .contact-banner h1{
+    margin-top: 140px;
+  }
+  
+  .contact-banner:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Contact Grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contact-form, .contact-info {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-form:hover, .contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Styling */
+  .contact-form h2, .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.05);
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Google Map */
+  .contact-map {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-map iframe:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-banner {
+      font-size: 24px;
+    }
+  
+    .contact-form, .contact-info {
+      padding: 15px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+    }
+  }
+  

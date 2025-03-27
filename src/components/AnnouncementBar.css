@@ -29,7 +29,7 @@
   left: 0;
   width: 100%;
   background: linear-gradient(90deg, #31668a, #ff5400); /* Premium gradient */
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 10px 15px;
   font-weight: 600;
@@ -56,4 +56,6 @@
   font-size: 16px;
   letter-spacing: 0.5px;
   text-transform: capitalize;
+  color: #ffffff; /* Ensures text color is white */
 }
+

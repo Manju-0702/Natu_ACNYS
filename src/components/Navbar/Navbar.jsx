@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -13,7 +12,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setDropdowns({ about: false, department: false }); 
+    setDropdowns({ about: false, department: false });
   };
 
   const handleMouseEnter = (name) => {
@@ -26,7 +25,6 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt="Logo" className='logo' />
       <div className='menu-icon' onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
