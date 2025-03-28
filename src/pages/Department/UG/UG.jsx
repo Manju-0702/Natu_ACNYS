@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFlask, FaHeartbeat, FaMicroscope, FaBrain, FaDna } from "react-icons/fa"; // Import Icons
 import "./UG.css";
-import { path } from "framer-motion/client";
+
 
 const courses = [
   { name: "Anotomy", path: "/department/ug/anatomy", icon: <FaFlask /> },

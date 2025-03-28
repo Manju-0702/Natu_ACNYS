@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    object-fit: cover;
 }
 
 .slider-section::after {
@@ -58,7 +59,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
-    background: linear-gradient(45deg, #ff9800, #e67e22);
+    background: linear-gradient(45deg,#1e73be, #00000070);
     border: none;
     border-radius: 8px;
     cursor: pointer;

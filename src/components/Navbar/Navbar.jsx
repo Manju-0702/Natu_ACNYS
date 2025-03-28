@@ -8,11 +8,12 @@ const Navbar = () => {
   const [dropdowns, setDropdowns] = useState({
     about: false,
     department: false,
+    academics: false,
   });
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setDropdowns({ about: false, department: false });
+    setDropdowns({ about: false, department: false, academics: false });
   };
 
   const handleMouseEnter = (name) => {
@@ -59,9 +60,22 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li><Link to="/academics" onClick={toggleMenu}>Academics</Link></li>
+          {/* Academics Dropdown */}
+          <li 
+            className='dropdown' 
+            onMouseEnter={() => handleMouseEnter('academics')} 
+            onMouseLeave={() => handleMouseLeave('academics')}
+          >
+            <span className="dropdown-title">Academics ▾</span>
+            <ul className={`dropdown-menu ${dropdowns.academics ? 'show' : ''}`}>
+              <li><Link to="/academics/workshop" onClick={toggleMenu}>Workshop</Link></li>
+              <li><Link to="/academics/research" onClick={toggleMenu}>Research</Link></li>
+              <li><Link to="/academics/publications" onClick={toggleMenu}>Publications</Link></li>
+            </ul>
+          </li>
+
           <li><Link to="/anandamaya" onClick={toggleMenu}>Anandamaya</Link></li>
-          <li><Link to="/ACNYS" onClick={toggleMenu}>Life@ACNYS</Link></li>
+          <li><Link to="/acnys" onClick={toggleMenu}>Life@ACNYS</Link></li>
           <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
         </ul>
       </nav>

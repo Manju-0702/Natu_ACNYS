@@ -28,6 +28,10 @@ import Footer from './components/Footer/Footer';
 import Forensic from './pages/Department/UG/Forensic/Forensic';
 import Community from './pages/Department/UG/Community/Community';
 
+import Workshop from "./pages/Academics/Workshop/Workshop";
+// import Research from "./pages/Academics/Research";
+// import Publications from "./pages/Academics/Publications";
+
 const App = () => {
   return (
     <Router>
@@ -43,6 +47,14 @@ const App = () => {
         <Route path="acnys" element={<ACNYS />} />
         <Route path="contact" element={<Contact />} />
         <Route path="programs" element={<Programs />} />
+
+        <Route path="/academics/workshop" element={<Workshop />} />
+  {/* <Route path="/academics/research" element={<Research />} />
+  <Route path="/academics/publications" element={<Publications />} /> */}
+
+
+
+
         <Route path="department/ug" element={<UG />} />
         <Route path="department/pg" element={<PG />} />
         <Route path="department/ug/anatomy" element={<Anatomy />} />
@@ -58,6 +70,7 @@ const App = () => {
         <Route path="department/ug/psychology" element={<Psychology />} />
         <Route path="department/ug/forensic-medicine" element={<Forensic />} />
         <Route path="department/ug/community" element={<Community />} />
+
       </Routes>
       <Footer />
     </Router>
