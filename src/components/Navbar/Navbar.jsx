@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import './Navbar.css'; // Import the CSS
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,61 +25,110 @@ const Navbar = () => {
   };
 
   return (
-    <div className='navbar'>
-      <div className='menu-icon' onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-main">
+          <div className="mobile-icon">
+            <button onClick={toggleMenu}>
+              {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
+
+          {/* Desktop Nav */}
+          <div className="desktop-menu">
+            <Link to="/" className="nav-link">Home</Link>
+
+            {/* About */}
+            <div
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('about')}
+              onMouseLeave={() => handleMouseLeave('about')}
+            >
+              <button className="nav-link">About ▾</button>
+              {dropdowns.about && (
+                <div className="dropdown-menu">
+                  <Link to="/about/acnys" className="dropdown-item">About ACNYS</Link>
+                  <Link to="/about/messages" className="dropdown-item">Messages</Link>
+                  <Link to="/about/vision-mission" className="dropdown-item">Vision & Mission</Link>
+                </div>
+              )}
+            </div>
+
+            {/* Department */}
+            <div
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('department')}
+              onMouseLeave={() => handleMouseLeave('department')}
+            >
+              <button className="nav-link">Department ▾</button>
+              {dropdowns.department && (
+                <div className="dropdown-menu">
+                  <Link to="/department/ug" className="dropdown-item">UG</Link>
+                  <Link to="/department/pg" className="dropdown-item">PG</Link>
+                </div>
+              )}
+            </div>
+
+            {/* Academics */}
+            <div
+              className="dropdown"
+              onMouseEnter={() => handleMouseEnter('academics')}
+              onMouseLeave={() => handleMouseLeave('academics')}
+            >
+              <button className="nav-link">Academics ▾</button>
+              {dropdowns.academics && (
+                <div className="dropdown-menu">
+                  <Link to="/academics/workshop" className="dropdown-item">Workshop</Link>
+                  <Link to="/academics/achieve" className="dropdown-item">Achievement</Link>
+                  <Link to="/academics/publications" className="dropdown-item">Publications</Link>
+                </div>
+              )}
+            </div>
+
+            <Link to="/anandamaya" className="nav-link">Anandamaya</Link>
+            <Link to="/acnys" className="nav-link">Life@ACNYS</Link>
+            <Link to="/contact" className="nav-link">Contact Us</Link>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="mobile-menu">
+            <Link to="/" onClick={toggleMenu} className="mobile-item">Home</Link>
+
+            <div>
+              <p className="mobile-title">About</p>
+              <div className="mobile-submenu">
+                <Link to="/about/acnys" onClick={toggleMenu} className="mobile-item">About ACNYS</Link>
+                <Link to="/about/messages" onClick={toggleMenu} className="mobile-item">Messages</Link>
+                <Link to="/about/vision-mission" onClick={toggleMenu} className="mobile-item">Vision & Mission</Link>
+              </div>
+            </div>
+
+            <div>
+              <p className="mobile-title">Department</p>
+              <div className="mobile-submenu">
+                <Link to="/department/ug" onClick={toggleMenu} className="mobile-item">UG</Link>
+                <Link to="/department/pg" onClick={toggleMenu} className="mobile-item">PG</Link>
+              </div>
+            </div>
+
+            <div>
+              <p className="mobile-title">Academics</p>
+              <div className="mobile-submenu">
+                <Link to="/academics/workshop" onClick={toggleMenu} className="mobile-item">Workshop</Link>
+                <Link to="/academics/achieve" onClick={toggleMenu} className="mobile-item">Achievement</Link>
+                <Link to="/academics/publications" onClick={toggleMenu} className="mobile-item">Publications</Link>
+              </div>
+            </div>
+
+            <Link to="/anandamaya" onClick={toggleMenu} className="mobile-item">Anandamaya</Link>
+            <Link to="/acnys" onClick={toggleMenu} className="mobile-item">Life@ACNYS</Link>
+            <Link to="/contact" onClick={toggleMenu} className="mobile-item">Contact Us</Link>
+          </div>
+        )}
       </div>
-      <nav className={menuOpen ? 'open' : ''}>
-        <ul>
-          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-
-          {/* About Dropdown */}
-          <li 
-            className='dropdown' 
-            onMouseEnter={() => handleMouseEnter('about')} 
-            onMouseLeave={() => handleMouseLeave('about')}
-          >
-            <span className="dropdown-title">About ▾</span>
-            <ul className={`dropdown-menu ${dropdowns.about ? 'show' : ''}`}>
-              <li><Link to="/about/acnys" onClick={toggleMenu}>About ACNYS</Link></li>
-              <li><Link to="/about/messages" onClick={toggleMenu}>Messages</Link></li>
-              <li><Link to="/about/vision-mission" onClick={toggleMenu}>Vision & Mission</Link></li>
-            </ul>
-          </li>
-
-          {/* Department Dropdown */}
-          <li 
-            className='dropdown' 
-            onMouseEnter={() => handleMouseEnter('department')} 
-            onMouseLeave={() => handleMouseLeave('department')}
-          >
-            <span className="dropdown-title">Department ▾</span>
-            <ul className={`dropdown-menu ${dropdowns.department ? 'show' : ''}`}>
-              <li><Link to="/department/ug" onClick={toggleMenu}>UG</Link></li>
-              <li><Link to="/department/pg" onClick={toggleMenu}>PG</Link></li>
-            </ul>
-          </li>
-
-          {/* Academics Dropdown */}
-          <li 
-            className='dropdown' 
-            onMouseEnter={() => handleMouseEnter('academics')} 
-            onMouseLeave={() => handleMouseLeave('academics')}
-          >
-            <span className="dropdown-title">Academics ▾</span>
-            <ul className={`dropdown-menu ${dropdowns.academics ? 'show' : ''}`}>
-              <li><Link to="/academics/workshop" onClick={toggleMenu}>Workshop</Link></li>
-              <li><Link to="/academics/research" onClick={toggleMenu}>Research</Link></li>
-              <li><Link to="/academics/publications" onClick={toggleMenu}>Publications</Link></li>
-            </ul>
-          </li>
-
-          <li><Link to="/anandamaya" onClick={toggleMenu}>Anandamaya</Link></li>
-          <li><Link to="/acnys" onClick={toggleMenu}>Life@ACNYS</Link></li>
-          <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   );
 };
 

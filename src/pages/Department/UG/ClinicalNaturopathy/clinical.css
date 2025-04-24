@@ -2,16 +2,19 @@
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 350px; /* Default height */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(245, 245, 245);
-    font-size: 2.0rem; /* Default font size */
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
     text-align: center;
     padding: 0 20px;
+}
+
+.Clinical-banner h1{
+    color: white;
 }
 
 /* Medium screens (tablets, 768px and below) */

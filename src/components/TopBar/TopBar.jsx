@@ -1,28 +1,34 @@
-import React from "react";
-import "./TopBar.css";
-import logo from '../../assets/logoo.png'
+import React from 'react';
+import logo from '../../assets/logo.png';
+import './TopBar.css';
 
-const TopBar = () => {
+const Header = () => {
   return (
-    <div className="topbar">
-      <div className="topbar-left">
-        <img src={logo} alt="Alva's Logo" className="topbar-logo" />
-        <span className="topbar-title"></span>
-      </div>
-      <div className="topbar-center">
-        <div className="topbar-info">
-          <span><strong>College Office:</strong> 9448915155, 9606044275</span>
-          <span><strong>Admission Office:</strong> 6366377825, 6366377827</span>
+    <header className="header">
+      <div className="main-header">
+        <div className="logo-container">
+          <img 
+            src={logo}
+            alt="Alvas Law College Logo"
+            className="logo"
+          />
         </div>
-        <div className="topbar-info">
-          <span><strong>Email Us:</strong> principal@alvaspucollege.org</span>
+
+        <div className="contact-inf">
+          <div className="contact-left">
+            <span>📞 College Office: 08258 – 238104 – 238111</span>
+            <span>📞 Fax: 08258 – 236731</span>
+            {/* <span>📞 9035255086</span> */}
+
+           
+              <span>✉️ <a href="mailto:lawcollege@alvascollege.com">admission@alvas.org / acnys@alvas.org / info@alvas.org</a></span>
+              {/* <span>✉️ <a href="mailto:principal@alvascollege.com">principal@alvascollege.com</a></span> */}
+            
+          </div>
         </div>
       </div>
-      <div className="topbar-right">
-        <button className="enquire-btn">Enquire Now!</button>
-      </div>
-    </div>
+    </header>
   );
 };
 
-export default TopBar;
+export default Header;

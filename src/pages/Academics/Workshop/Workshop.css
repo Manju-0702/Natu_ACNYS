@@ -1,50 +1,42 @@
-/* Workshop Page Styles */
 .workshop-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .workshop-content {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #0073e6;
-    margin-bottom: 20px;
-  }
-  
-  .section {
-    margin-bottom: 20px;
-  }
-  
-  .section-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #005bb5;
-    border-bottom: 2px solid #005bb5;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.workshop-card {
+  display: flex;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.workshop-info {
+  padding: 1.5rem;
+}
+
+.workshop-info h2 {
+  color: #007b5e;
+  margin-bottom: 1rem;
+}
+
+.workshop-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}

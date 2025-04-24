@@ -11,7 +11,7 @@ import trustee5 from '../../../assets/Message1.jpeg';
 const Management = () => {
   return (
     <div>
-      <div className="about-banner">
+      <div className="message-banner">
         <h1>Messages</h1>
       </div>
 

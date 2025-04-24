@@ -5,7 +5,7 @@ const VisionMission = () => {
   return (
     <>
       <div className="vision-mission-banner">
-       
+      <h1>Vission-Mission</h1>
       </div>
 
       <div className="vision-box">

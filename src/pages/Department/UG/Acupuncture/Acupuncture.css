@@ -2,23 +2,28 @@
     background-image: url('../../../../assets/back.jpg'); /* Update the path */
     background-size: cover;
     background-position: center;
-    height: 350px; /* Default height */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(245, 245, 245);
-    font-size: 2.0rem; /* Default font size */
+    font-size: 2.0rem;
     font-weight: bold;
-    text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
     text-align: center;
     padding: 0 20px;
+}
+
+.Acupunture-banner h1 {
+    color: white;
 }
 
 /* Medium screens (tablets, 768px and below) */
 @media (max-width: 768px) {
     .Acupunture-banner {
         height: 200px;
-        font-size: 2rem;    
+        font-size: 1.8rem; /* Slightly smaller font size for tablets */
+    }
+    .Acupunture-banner h1 {
+        font-size: 1.8rem; /* Adjust the text size inside the banner */
     }
 } 
 
@@ -26,12 +31,12 @@
 @media (max-width: 480px) {
     .Acupunture-banner {
         height: 150px;
-        font-size: 1.5rem;
-        padding: 0 10px;
+        font-size: 1.5rem; /* Further reduce the font size for smaller screens */
+    }
+    .Acupunture-banner h1 {
+        font-size: 1.5rem; /* Adjust the text size inside the banner */
     }
 }
-
-
 
 .Acupunture-container {
     text-align: center;
@@ -92,7 +97,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Front Side */
 /* Front Side */
 .card-front {
     background: white;
@@ -170,15 +174,15 @@
     font-weight: bold;
 }
 
-.about-department{
+.about-department {
     margin-bottom: 80px;
 }
 
-.about-department h2{
+.about-department h2 {
     font-size: 3rem;
 }
 
-.faculty-heading{
+.faculty-heading {
     margin-bottom: 40px;
     font-size: 35px;
 }

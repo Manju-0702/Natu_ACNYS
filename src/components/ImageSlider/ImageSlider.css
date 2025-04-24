@@ -59,7 +59,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
-    background: linear-gradient(45deg,#1e73be, #00000070);
+    background: linear-gradient(45deg, #1e73be, #000000); /* Fully opaque black */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -67,6 +67,7 @@
     color: white;
     text-transform: uppercase;
 }
+
 
 .slider-buttons button:hover {
     background: linear-gradient(45deg, #e67e22, #ff5722);

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Clinical.css";
-import faculty1 from "../../../../assets/user.webp";
+import faculty1 from "../../../../assets/clinical6.jpeg";
 import faculty2 from "../../../../assets/user.webp";
-import faculty3 from "../../../../assets/user.webp";
+import faculty3 from "../../../../assets/clinical5.jpeg";
 import faculty4 from "../../../../assets/clinical4.jpg";
 import faculty5 from "../../../../assets/clinical1.jpg";
 import faculty6 from "../../../../assets/clinical3.jpg";
@@ -17,7 +17,7 @@ const facultyData = [
     designation: "Professor",
     qualification: "BSc , MLT, MSC(MED), PHD",
     yoe: "15 Years",
-    mobile: "+91 98765 43210",
+    // mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
@@ -27,7 +27,7 @@ const facultyData = [
     designation: "Professor",
     qualification: "BNYS",
     yoe: "13 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -37,7 +37,7 @@ const facultyData = [
     designation: "Associate Professor",
     qualification: "BNYS, MD Naturopathy",
     yoe: "9 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -47,7 +47,7 @@ const facultyData = [
     designation: "Assistant Professor",
     qualification: "BNYS",
     yoe: "6 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -57,7 +57,7 @@ const facultyData = [
     designation: "Associate Professor",
     qualification: "BNYS, MD Naturopathy",
     yoe: "13 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -67,7 +67,7 @@ const facultyData = [
     designation: "Lecturer",
     qualification: "BNYS",
     yoe: "1 Year",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -77,7 +77,7 @@ const facultyData = [
     designation: "Lecturer",
     qualification: "BNYS",
     yoe: "4 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -87,7 +87,7 @@ const facultyData = [
     designation: " Professor",
     qualification: "MA , PhD",
     yoe: "20 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
 ];
@@ -103,8 +103,17 @@ const Anatomy = () => {
         <div className="about-department">
           <h2>About Department</h2>
           <p>
-            The Anatomy Department is dedicated to providing comprehensive education 
-            in human anatomy, fostering research, and encouraging innovation in the field.
+          The Department of Manipulative Therapies and Physical Medicine focuses on the use of hands-on
+techniques and physical interventions to treat musculoskeletal pain, injuries, and disorders. Manipulative
+therapies include various manual techniques like chiropractic adjustments, osteopathy, and therapeutic
+massage, aimed at improving joint mobility, reducing pain, and restoring normal function. These
+therapies are often used for conditions such as back pain, neck pain, and joint stiffness.
+Physical medicine involves the use of physical methods such as exercise, heat therapy, cold therapy,
+ultrasound, electrical stimulation, and hydrotherapy to treat and rehabilitate individuals with
+musculoskeletal injuries, neurological conditions, or disabilities. This department emphasizes non-
+invasive, holistic approaches to healing and rehabilitation, aiming to improve physical function, reduce
+pain, and enhance the quality of life. Students in this department are trained to assess, diagnose, and treat
+physical impairments using manual and physical modalities, supporting overall health and mobility.
           </p>
         </div>
 
@@ -127,7 +136,7 @@ const Anatomy = () => {
                     <p className="faculty-back-designation">{faculty.designation}</p>
                     <p className="faculty-back-qualification"><strong>Qualification:</strong> {faculty.qualification}</p>
                     <p className="faculty-back-yoe"><strong>YOE:</strong> {faculty.yoe}</p>
-                    <p className="faculty-back-mobile"><strong>Mobile:</strong> {faculty.mobile}</p>
+                    {/* <p className="faculty-back-mobile"><strong>Mobile:</strong> {faculty.mobile}</p> */}
                     <p className="faculty-back-email"><strong>Email:</strong> {faculty.email}</p>
                   </div>
                 </div>

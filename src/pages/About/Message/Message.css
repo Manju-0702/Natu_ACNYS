@@ -1,7 +1,7 @@
 /* ===============================
    Banner Styling
 ================================== */
-.about-banner {
+.message-banner {
   background-image: url('../../../assets/back.jpg'); /* Update the path */
   background-size: cover;
   background-position: center;
@@ -9,12 +9,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   font-size: 2.5rem;
   font-weight: bold;
   text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
   text-align: center;
   padding: 0 20px;
+}
+
+.message-banner h1{
+  color: white;
 }
 
 /* ===============================

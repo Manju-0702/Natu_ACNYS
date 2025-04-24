@@ -1,12 +1,21 @@
 /* Banner Styling */
 .vision-mission-banner {
-  margin-top: 150px;
+  background-image: url('../../../assets/back.jpg'); /* Update the path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
+  text-align: center;
+  padding: 0 20px;
 }
 
 .vision-mission-banner h1 {
-  font-size: 42px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
+color: white;
 }
 
 /* Vision & Mission Styling */

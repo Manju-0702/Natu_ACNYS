@@ -11,7 +11,7 @@ const facultyData = [
     designation: "Professor",
     qualification: "M.sc (MED Microbiology)",
     yoe: "11 Years",
-    mobile: "+91 98765 43210",
+    // mobile: "+91 98765 43210",
     email: "harish.nayak@example.com"
   },
   {
@@ -21,7 +21,7 @@ const facultyData = [
     designation: "Associate Professor",
     qualification: "BAMS, MSC Physiology",
     yoe: "8 Years",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -31,7 +31,7 @@ const facultyData = [
     designation: "Assistant Professor",
     qualification: "BNYS, MD Naturopathy",
     yoe: "1 Year",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
 ];
@@ -71,7 +71,7 @@ const Anatomy = () => {
                     <p className="faculty-back-designation">{faculty.designation}</p>
                     <p className="faculty-back-qualification"><strong>Qualification:</strong> {faculty.qualification}</p>
                     <p className="faculty-back-yoe"><strong>YOE:</strong> {faculty.yoe}</p>
-                    <p className="faculty-back-mobile"><strong>Mobile:</strong> {faculty.mobile}</p>
+                    {/* <p className="faculty-back-mobile"><strong>Mobile:</strong> {faculty.mobile}</p> */}
                     <p className="faculty-back-email"><strong>Email:</strong> {faculty.email}</p>
                   </div>
                 </div>

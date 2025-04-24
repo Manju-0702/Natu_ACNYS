@@ -6,31 +6,25 @@
 
 /* Responsive Banner */
 .ug-banner {
-    background-image: url('../../../assets/back.jpg');
-    color: white;
-    text-align: center;
-    padding: 25px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    height: 450px;
+    background-image: url('../../../assets/back.jpg'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.ug-banner h1 {
-    margin: 0;
-    font-size: 5.0rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(11, 233, 104, 0.6);
     text-align: center;
+    padding: 0 20px;
 }
 
-.ug-banner:hover {
-    transform: scale(1.02);
+.ug-banner h1{
+    color: white;
 }
+
+
 
 /* Responsive Content */
 .ug-content {
@@ -127,7 +121,6 @@
     .ug-banner {
         font-size: 1.2rem;
         height: 200px;
-        padding: 15px;
     }
 
     .ug-banner h1 {

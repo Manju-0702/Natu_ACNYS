@@ -21,7 +21,7 @@ const facultyData = [
     designation: "Lecturer",
     qualification: "BNYS",
     yoe: "1 Year",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
   {
@@ -31,7 +31,7 @@ const facultyData = [
     designation: "Assistant Professor",
     qualification: "BNYS, MD Naturopathy",
     yoe: "1 Year",
-    mobile: "+91 87654 32109",
+    // mobile: "+91 87654 32109",
     email: "jane.smith@example.com"
   },
 ];
